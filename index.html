@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game Homework Five</title>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+<div class="container">  		<!--creates overall grid -->
+
+  <div class="row" style="margin: 30px"> <!--open row for white background-->
+      <div class="col-md-12" style="margin-top: 50px; margin-bottom: 50px;background-color: #f5f5f5; padding-bottom: 20px; border: solid 2px gray;"> <!--open col for white background -->
+        <h1>Welcome to Shakespeare Trivia!</h1>
+          <br>
+  	       <div class="row" style="text-align: center">
+  	         <div class="col-md-4">
+                <img src="assets/images/globe.jpg" style="height: 125px; width: 125px; margin: 5px"> 
+              </div>  <!--close first image -->
+             <div class="col-md-4">
+                <img src="assets/images/shakesp.jpg" style="height: 125px; width: 125px; margin: 5px;">
+              </div> <!--close second image -->
+            <div class="col-md-4">
+                <img src="assets/images/stratuponavon.jpg" style="height: 125px; width: 125px; margin: 5px">
+  	         </div> <!--close third image -->
+  	       </div>  <!-- close image column -->
+  
+              <br>
+ 	              <p id="bodytext">William Shakespeare was an English poet, playwright, and actor, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist.  His extant works, including collaborations, consist of approximately 38 plays,154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship. His plays have been translated into every major living language and are performed more often than those of any other playwright.</p>
+ 	          <br>
+ 	            <p id="headline">Test your knowledge of William Shakespeare! <br>  
+              Once you click the Get Started button, you will have 90 seconds to complete the survey.<br>
+              Good luck!</p> 
+              <p id="formToFillTwo"> </p>
+            <br>
+
+          <div class="text-center">
+            <button id="startButton" class="btn btn-primary="><h3>Get Started!</h3></button>
+            <br>
+            <br>
+            <br>
+          </div> <!-- close button -->
+      
+        <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false" style="text-align: center">
+
+        <li><div class="question">When was Shakespeare alive?</div></li>
+        <input id="answer" type="radio" name="q1" value="wrong"> 1901 - 1955
+        <input id="answer" type="radio" name="q1" value="correct"> 1564 - 1616 
+        <input id="answer" type="radio" name="q1" value="wrong"> 1764 - 1825<hr>
+
+        <li><div class="question">Shakespeare married his wife when he was 18, what was her name?</div></li>
+        <input id="answer" type="radio" name="q2" value="correct"> Anne Hathaway
+        <input id="answer" type="radio" name="q2" value="wrong"> Anne Boeyln
+        <input id="answer" type="radio" name="q2" value="wrong"> Anne of Cleves<hr>
+
+        <li><div class="question">What was Shakespeare's first play?</div></li>
+        <input id="answer" type="radio" name="q3" value="wrong"> Hamlet
+        <input id="answer" type="radio" name="q3" value="wrong"> Romeo and Juliet
+        <input id="answer" type="radio" name="q3" value="correct" >Henry VI<hr>
+
+        <li><div class="question">Shakespeare was born in Stratford-upon-Avon and later moved to what city to become a playwright?</div></li>
+        <input id="answer" type="radio" name="q4" value="wrong"> Rome
+        <input id="answer" type="radio" name="q4" value="wrong"> Paris
+        <input id="answer" type="radio" name="q4" value="correct" >London<hr>
+
+        <li><div class="question">What is the title of Shakespeare's most famous play?</div></li>
+        <input id="answer" type="radio" name="q5" value="wrong"> Romeo and Juliet
+        <input id="answer" type="radio" name="q5" value="wrong"> Macbeth
+        <input id="answer" type="radio" name="q5" value="correct" > Hamlet<hr>
+
+        <li><div class="question">Shakespeare was assosiated with the Globe Theatre which was destroyed in 1614, how was the original Globe destroyed?</div></li>
+        <input id="answer" type="radio" name="q6" value="wrong"> Termites
+        <input id="answer" type="radio" name="q6" value="correct"> Fire
+        <input id="answer" type="radio" name="q6" value="wrong"> An angry mob <hr>
+
+        <li><div class="question">Which queen was very fond of Shakespeare and his work?</div></li>
+        <input id="answer" type="radio" name="q7" value="correct"> Queen Elizabeth
+        <input id="answer" type="radio" name="q7" value="wrong"> Queen Victoria
+        <input id="answer" type="radio" name="q7" value="wrong"> Queen Maude<hr>
+
+        <li><div class="question">Shakespeare's death is a mystery but the most common theory is that he died of...</div></li>
+        <input id="answer" type="radio" name="q8" value="wrong"> A broken heart
+        <input id="answer" type="radio" name="q8" value="wrong"> Alcohol poisoning
+        <input id="answer" type="radio" name="q8" value="correct"> A fever <hr>
+
+
+            <button class="submit" id="validateform" type="submit">Submit</button>
+
+
+        <!-- <p><input type="button" value="Go" onclick="validateform()"></p> -->
+        </form>
+       
+      </div> <!-- close main column -->
+    </div>  <!-- close main row -->
+  </div>   <!-- close main container -->
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
